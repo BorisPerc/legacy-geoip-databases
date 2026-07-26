@@ -109,7 +109,7 @@ sudo nano /etc/apache2/mods-available/geoip.conf
 </IfModule>
  ```
 
-## Sample for SCADA protect login only from your countires you have home, ranch or weekend house:
+## Sample for SCADA protect login only from your countires you have home, business place, ranch or weekend house:
 ```bash
 Example access only from EU countries SCADA setup SQL Cybrotech industrial controllers:
 UPDATE `system_countries` 
@@ -140,6 +140,7 @@ RewriteRule ^(.*)$ https://%{SERVER_NAME}/error.html [L,R=302]
 </IfModule>
 
 Example for block all countries except Spain for method POST|HEAD|OPTIONS|PROPFIND|PUT|CONNECT|DEBUG|DELETE|MOVE|TRACE|TRACK:
+
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{REQUEST_METHOD} (POST|HEAD|OPTIONS|PROPFIND|PUT|CONNECT|DEBUG|DELETE|MOVE|TRACE|TRACK)
@@ -208,7 +209,7 @@ Regular Updates: This is a "do-it-yourself" approach, meaning you are responsibl
 
 Device Compatibility: It natively supports common industrial protocols like Modbus RTU/TCP, OPC UA, MQTT, and Siemens S7 (which covers a massive range of devices and almost all modern inverters).
 
-## INTEGRATE GEOIP LEGACY IN YOUR WEBSCADA TO PROTECT YOUR HOME OR BUSINESS PLACE
+## INTEGRATE GEOIP LEGACY IN YOUR WEBSCADA TO PROTECT YOUR HOME OR BUSINESS PLACE OR RANCH OR WEEKEND HOUSE
 FOR AI I SUGGEST TO TRY THIS DEEPSEEK MODELS AND FOR SCADA SERVER I SUGGEST TO USE ORANGEPI6 AS IS BETTER THAN RASPBERRYPI BUT IF YOU HAVE RANCH OR HOME/BUSINESS PLACE FOR SOLAR PANEL MOVEMENTS I SUGGEST RASPBERRYPI AS IT CONSUME MUCH LESS ELECTRICITY COMPARE TO ORANGEPI6 AND FOR SOLARASSISTANT I SUGGEST RASPBERRYPI4/5 BUT ORANGEPI3 WILL DO PERFECT JOB:
 
 AI Models for Smart Home & SCADA Control
