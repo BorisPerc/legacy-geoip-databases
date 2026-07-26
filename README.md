@@ -118,7 +118,7 @@ sudo nano /etc/apache2/mods-available/geoip.conf
 
 ## Sample for SCADA protect login only from your countires you have home, business place, ranch or weekend house:
 ```bash
-Example access only from EU countries SCADA setup SQL Cybrotech industrial controllers:
+Example access only from EU countries SCADA setup SQL Cybrotech industrial controllers extra python module GeoIP:
 UPDATE `system_countries` 
 SET `enabled` = CASE 
     WHEN `country_code` IN ('AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB') 
