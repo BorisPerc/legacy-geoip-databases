@@ -22,7 +22,14 @@ Exampe if you use Apache WEB Server with ProFTPd:
 ```bash
 sudo apt-get install -y apache2 apache2-utils apache2-dev libapache2-mod-geoip geoip-bin geoip-database proftpd openssl proftpd-basic proftpd-mod-geoip -y
  ```
-
+NOW OVERWRITE ALL DATABASES IN DIRECTORY for UNIX BASE SERVER:
+```
+/usr/share/GeoIP/
+```
+OR FOR WINDOWS DEPEND ON YOUR INITIAL INSTALL:
+```
+C:\ProgramData\GeoIP or C:\GeoIP
+```
 apache
 # Load required modules
 LoadModule mod_geoip.c
